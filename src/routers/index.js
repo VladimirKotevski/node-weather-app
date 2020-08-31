@@ -6,14 +6,14 @@ const forecast = require('../utils/forecast')
 router.get('', (req, res) => {
     res.render('index', {
         title: 'Weather',
-        name: 'Borche Stefanovski'
+        name: 'Vladimir Kotevski'
     })
 })
 
 router.get('/about', (req, res) => {
     res.render('about', {
         title: 'About Me',
-        name: 'Borche Stefanovski'
+        name: 'Vladimir Kotevski'
     })
 })
 
@@ -21,7 +21,7 @@ router.get('/help', (req, res) => {
     res.render('help', {
         helpText: 'This is some helpful text.',
         title: 'Help',
-        name: 'Borche Stefanovski'
+        name: 'Vladimir Kotevski'
     })
 })
 
@@ -68,7 +68,7 @@ router.get('/products', (req, res) => {
 router.get('/help/*', (req, res) => {
     res.render('404', {
         title: '404',
-        name: 'Borche Stefanovski',
+        name: 'Vladimir Kotevski',
         errorMessage: 'Help article not found.'
     })
 })
@@ -76,7 +76,7 @@ router.get('/help/*', (req, res) => {
 router.get('*', (req, res) => {
     res.render('404', {
         title: '404',
-        name: 'Borche Stefanovski',
+        name: 'Vladimir Kotevski',
         errorMessage: 'Page not found.'
     })
 })
